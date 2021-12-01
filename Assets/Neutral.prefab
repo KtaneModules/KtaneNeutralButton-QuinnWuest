@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33554050741930742}
   - component: {fileID: 23474589316299878}
   - component: {fileID: 114144675844634442}
+  - component: {fileID: 114381446879657412}
   m_Layer: 0
   m_Name: HL
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - component: {fileID: 4312809095008686}
   - component: {fileID: 33988923481095340}
   - component: {fileID: 23922083597780112}
+  - component: {fileID: 114893204997613944}
   m_Layer: 0
   m_Name: Base-Dark
   m_TagString: Untagged
@@ -127,6 +129,7 @@ GameObject:
   - component: {fileID: 4973472360690734}
   - component: {fileID: 33577554260047140}
   - component: {fileID: 23992747551173284}
+  - component: {fileID: 114891986039842770}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -144,6 +147,7 @@ GameObject:
   - component: {fileID: 4884639324573820}
   - component: {fileID: 33102738888358204}
   - component: {fileID: 23984423933363368}
+  - component: {fileID: 114826262890245874}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -161,6 +165,7 @@ GameObject:
   - component: {fileID: 4866021331834078}
   - component: {fileID: 33898690387867322}
   - component: {fileID: 23396871272126058}
+  - component: {fileID: 114382217972560120}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -616,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: -119419473, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModuleType: NeutralModule
+  ModuleType: NeutralButtonModule
   ModuleDisplayName: The Neutral Button
   RequiresTimerVisibility: 0
 --- !u!114 &114144675844634442
@@ -644,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - Mobile/Diffuse
+  - KT/Mobile/DiffuseTint
 --- !u!114 &114232304501861846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -690,6 +695,32 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
+--- !u!114 &114381446879657412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067742549014138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - Standard
+--- !u!114 &114382217972560120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683275948348374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/DiffuseTint
 --- !u!114 &114414342609986616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -743,6 +774,45 @@ MonoBehaviour:
   m_Script: {fileID: 2144496390, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114826262890245874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1601078601279434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/DiffuseTint
+--- !u!114 &114891986039842770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553860010654568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/DiffuseTint
+--- !u!114 &114893204997613944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274288327590874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/DiffuseTint
 --- !u!114 &114918742118686872
 MonoBehaviour:
   m_ObjectHideFlags: 1
