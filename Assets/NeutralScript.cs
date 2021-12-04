@@ -57,7 +57,7 @@ public class NeutralScript : MonoBehaviour
             }
             else
             {
-                Module.HandleStrike();                
+                Module.HandleStrike();
                 Debug.LogFormat("[The Neutral Button #{0}] Struck. H{1}.", _moduleId, new string('m', Rnd.Range(2, 6)));
             }
         }
@@ -99,7 +99,7 @@ public class NeutralScript : MonoBehaviour
     }
 
 #pragma warning disable 0414
-    private readonly string TwitchHelpMessage = "!{0} blink";
+    private readonly string TwitchHelpMessage = "!{0} blink [Press the button when it blinks]";
 #pragma warning restore 0414
 
     private IEnumerator ProcessTwitchCommand(string command)
