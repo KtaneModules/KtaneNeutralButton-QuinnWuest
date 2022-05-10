@@ -19,4 +19,4 @@ MonoBehaviour:
     Made by Quinn Wuest'
   version: 1.0
   outputFolder: build
-  previewImage: {fileID: 2800000, guid: 978e19f919d18ef43a557312a750a60c, type: 3}
+  previewImage: {fileID: 2800000, guid: 1efffc2ebc64c5e4681ac15fe9ff7aae, type: 3}
