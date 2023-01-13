@@ -14,9 +14,9 @@ MonoBehaviour:
   id: NeutralButtonModule
   title: The Neutral Button
   author: Quinn Wuest
-  description: 'Blink and you''ll miss it.
-
-    Made by Quinn Wuest'
+  description: "Blink and you'll miss it.\r\n\r\nIdea by AlexV\r\nMade by Quinn Wuest\r\n\r\n[url=https://ktane.timwi.de/HTML/The%20Neutral%20Button.html]Manual
+    HTML[/url]\r\n[url=https://ktane.timwi.de/PDF/The%20Neutral%20Button.pdf]Manual
+    PDF[/ur"
   version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 1efffc2ebc64c5e4681ac15fe9ff7aae, type: 3}
