@@ -20,9 +20,6 @@ public class NeutralScript : MonoBehaviour
     private bool _moduleSolved;
     private bool _isBlinking;
 
-    private bool TwitchPlaysActive;
-    private bool _tpActive;
-
     private void Start()
     {
         _moduleId = _moduleIdCounter++;
@@ -36,7 +33,6 @@ public class NeutralScript : MonoBehaviour
     private void Activate()
     {
         StartCoroutine(Hmm());
-        _tpActive = TwitchPlaysActive;
     }
 
     private IEnumerator Hmm()
@@ -51,7 +47,7 @@ public class NeutralScript : MonoBehaviour
         Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.BigButtonPress, transform);
         if (!_moduleSolved)
         {
-            if (_isBlinking || _tpActive)
+            if (_isBlinking)
             {
                 _moduleSolved = true;
                 Module.HandlePass();
@@ -111,9 +107,9 @@ public class NeutralScript : MonoBehaviour
         if (m.Success)
         {
             yield return null;
+            yield return "multiple strikes";
             while (!_isBlinking)
                 yield return null;
-            yield return "multiple strikes";
             ButtonSel.OnInteract();
             yield return new WaitForSeconds(0.2f);
             ButtonSel.OnInteractEnded();
